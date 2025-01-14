@@ -22,37 +22,3 @@ const roadtripData = [
   },
   // Voeg 20 extra dagen toe met dezelfde structuur...
 ];
-        "from": "New York JFK Airport",
-        "to": "LAX Airport",
-        "hotel": {
-            "name": "Hampton Inn By Hilton Los Angeles Airport",
-            "coordinates": "33.942722, -118.369611",
-            "image": "https://conroy95.github.io/RoadTrip95/images/hotel1.jpg"
-        },
-        "stops": [
-            {
-                "name": "Calico Ghost Town",
-                "coordinates": "34.9411° N, 116.8642° W",
-                "image": "images/calico.jpg"
-            }
-        ]
-    },
-    {
-        "day": 2,
-        "from": "Las Vegas, NV",
-        "to": "Grand Canyon, AZ",
-        "hotel": {
-            "name": "El Tovar Hotel",
-            "coordinates": "36.0544° N, 112.1401° W",
-            "image": "images/el-tovar.jpg"
-        },
-        "stops": [
-            {
-                "name": "Hoover Dam",
-                "coordinates": "36.0156° N, 114.7378° W",
-                "image": "images/hoover-dam.jpg"
-            }
-        ]
-    }
-    // Voeg hier meer dagen toe
-]
