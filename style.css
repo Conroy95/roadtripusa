@@ -1,50 +1,51 @@
+/* style.css */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: #f0f0f0;
+  color: #333;
 }
 
 header {
-    background-color: #002b5c;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
+  background: #002868; /* Navy Blue */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 5px solid #bf0a30; /* Red Stripe */
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
 }
 
-main {
-    padding: 1rem;
+#roadtrip-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
 }
 
 .day {
-    background: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 1rem 0;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .day h2 {
-    color: #002b5c;
-    margin-bottom: 0.5rem;
+  color: #002868;
 }
 
 .day img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 8px;
 }
 
 footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #002b5c;
-    color: white;
+  background: #002868;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
 }
