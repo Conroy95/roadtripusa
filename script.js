@@ -1,44 +1,32 @@
+// script.js
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            const container = document.getElementById('days-container');
-            data.forEach(day => {
-                const dayDiv = document.createElement('div');
-                dayDiv.classList.add('day');
+  const container = document.getElementById("roadtrip-container");
 
-                // Dag titel
-                const title = document.createElement('h2');
-                title.textContent = `Day ${day.day}: ${day.from} to ${day.to}`;
-                dayDiv.appendChild(title);
+  roadtripData.forEach(day => {
+    const dayDiv = document.createElement("div");
+    dayDiv.classList.add("day");
 
-                // Hotel info
-                const hotel = document.createElement('p');
-                hotel.innerHTML = `<strong>Hotel:</strong> ${day.hotel.name} (${day.hotel.coordinates})`;
-                dayDiv.appendChild(hotel);
+    // Dagelijkse titel
+    dayDiv.innerHTML = `
+      <h2>Day ${day.day}: ${day.from} to ${day.to}</h2>
+      <h3>Stops:</h3>
+      <ul>
+        ${day.stops.map(stop => `
+          <li>
+            <strong>${stop.name}</strong> (Coordinates: ${stop.coords})
+            <br>
+            <img src="${stop.img}" alt="${stop.name}">
+          </li>
+        `).join('')}
+      </ul>
+      <h3>Hotel:</h3>
+      <p>
+        <strong>${day.hotel.name}</strong> (Coordinates: ${day.hotel.coords})
+        <br>
+        <img src="${day.hotel.img}" alt="${day.hotel.name}">
+      </p>
+    `;
 
-                const hotelImg = document.createElement('img');
-                hotelImg.src = day.hotel.image;
-                hotelImg.alt = day.hotel.name;
-                dayDiv.appendChild(hotelImg);
-
-                // Stops onderweg
-                const stopsTitle = document.createElement('h3');
-                stopsTitle.textContent = 'Stops along the way:';
-                dayDiv.appendChild(stopsTitle);
-
-                day.stops.forEach(stop => {
-                    const stopInfo = document.createElement('p');
-                    stopInfo.innerHTML = `<strong>${stop.name}:</strong> (${stop.coordinates})`;
-                    dayDiv.appendChild(stopInfo);
-
-                    const stopImg = document.createElement('img');
-                    stopImg.src = stop.image;
-                    stopImg.alt = stop.name;
-                    dayDiv.appendChild(stopImg);
-                });
-
-                container.appendChild(dayDiv);
-            });
-        });
+    container.appendChild(dayDiv);
+  });
 });
