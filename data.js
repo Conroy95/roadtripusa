@@ -16,8 +16,9 @@ const roadtripData = [
     from: "Los Angeles",
     to: "Cambria",
     stops: [
-      { name: "Hoover Dam", coords: "36.0156, -114.7378", img: "images/hoover.jpg" },
-      { name: "Route 66 Museum", coords: "35.1895, -114.0530", img: "images/route66.jpg" },
+      { name: "Santa Barbara", coords: "34.9428, -116.8653", img: "images/calico.jpg" },
+      { name: "Vandenberg Space Force Base Visitor Cente", coords: "35.0121, -115.4708", img: "images/mojave.jpg" },
+      { name: "Pismo Beach", coords: "35.0121, -115.4708", img: "images/mojave.jpg" },
     ],
     hotel: { name: "Cambria Pines Lodge", coords: "35.558722, -121.080111", img: "https://conroy95.github.io/RoadTrip95/images/hotel2.jpg" }
   },
