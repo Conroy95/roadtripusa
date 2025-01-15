@@ -5,7 +5,7 @@ const roadtripData = [
     from: "New York JFK Airport",
     to: "LAX Airport",
     stops: [
-      { name: "Auto ophalen", coords: "" },
+      { name: "Auto ophalen", coords: "", img: "images/auto.png" },
     ],
     hotel: { name: "Hampton Inn By Hilton Los Angeles Airport", coords: "33.942722, -118.369611", img: "images/hotel1.png" }
   },
@@ -26,10 +26,10 @@ const roadtripData = [
     from: "Cambria",
     to: "Monterey",
     stops: [
-      { name: "McDonalds in King City", coords: "36.20300556518639, -121.13611903778286", img: "images/calico.jpg" },
-      { name: "Starbucks in King City", coords: "36.20370271436367, -121.13651153725596", img: "images/mojave.jpg" },
-      { name: "Taco Bell in King City", coords: "36.20279636668757, -121.13543297976454", img: "images/mojave.jpg" },
-      { name: "Bixby Bridge Vista Point", coords: "36.37258158760908, -121.90306379229146", img: "images/mojave.jpg" },
+      { name: "McDonalds in King City", coords: "36.20300556518639, -121.13611903778286", img: "images/photo.png" },
+      { name: "Starbucks in King City", coords: "36.20370271436367, -121.13651153725596", img: "images/photo.png" },
+      { name: "Taco Bell in King City", coords: "36.20279636668757, -121.13543297976454", img: "images/photo.png" },
+      { name: "Bixby Bridge Vista Point", coords: "36.37258158760908, -121.90306379229146", img: "images/photo.png" },
     ],
     hotel: { name: "Best Western De Anza Inn", coords: "36.59689236341396, -121.86103710206167", img: "images/hotel3.png" }
   },
@@ -38,12 +38,12 @@ const roadtripData = [
     from: "Monterey",
     to: "San Francisco",
     stops: [
-      { name: "In-N-Out Burger", coords: "36.60569141608731, -121.85824136161531", img: "images/calico.jpg" },
-      { name: "Starbucks", coords: "36.6079717617884, -121.85566637324806", img: "images/mojave.jpg" },
-      { name: "McDonald's", coords: "36.60831596177344, -121.85606584639598", img: "images/mojave.jpg" },
-      { name: "Shell Tankstation", coords: "36.609881040963025, -121.85721139773395", img: "images/mojave.jpg" },
-      { name: "Santa Cruz Pier", coords: "36.96241953478573, -122.02326661283821", img: "images/mojave.jpg" },
-      { name: "Henry Cowell Redwoods State Park", coords: "37.04027762099372, -122.06385193982027", img: "images/mojave.jpg" },
+      { name: "In-N-Out Burger", coords: "36.60569141608731, -121.85824136161531", img: "images/photo.png" },
+      { name: "Starbucks", coords: "36.6079717617884, -121.85566637324806", img: "images/photo.png" },
+      { name: "McDonald's", coords: "36.60831596177344, -121.85606584639598", img: "images/photo.png" },
+      { name: "Shell Tankstation", coords: "36.609881040963025, -121.85721139773395", img: "images/photo.png" },
+      { name: "Santa Cruz Pier", coords: "36.96241953478573, -122.02326661283821", img: "images/photo.png" },
+      { name: "Henry Cowell Redwoods State Park", coords: "37.04027762099372, -122.06385193982027", img: "images/photo.png" },
     ],
     hotel: { name: "Best Western De Anza Inn", coords: "36.59689236341396, -121.86103710206167", img: "images/hotel3.png" }
   },
