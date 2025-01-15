@@ -2,13 +2,13 @@
 const roadtripData = [
   {
     day: 1,
-    from: "Los Angeles, CA",
-    to: "Las Vegas, NV",
+    from: "New York JFK Airport",
+    to: "LAX Airport",
     stops: [
       { name: "Calico Ghost Town", coords: "34.9428, -116.8653", img: "images/calico.jpg" },
       { name: "Mojave National Preserve", coords: "35.0121, -115.4708", img: "images/mojave.jpg" },
     ],
-    hotel: { name: "Bellagio Hotel", coords: "36.1126, -115.1767", img: "images/bellagio.jpg" }
+    hotel: { name: "Hampton Inn By Hilton Los Angeles Airport", coords: "33.942722, -118.369611", img: "https://conroy95.github.io/RoadTrip95/images/hotel1.jpg" }
   },
   {
     day: 2,
