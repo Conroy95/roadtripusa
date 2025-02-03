@@ -18,5 +18,39 @@
   </footer>
   <script src="data.js"></script>
   <script src="script.js"></script>
+  <script>
+    function getHashCode(str,caseSensitive){ //Get text's hash code
+    if(!caseSensitive){
+        str = str.toLowerCase();
+    }
+    var hash  =   1315423911,i,ch;
+    for (i = str.length - 1; i >= 0; i--) {
+        ch = str.charCodeAt(i);
+        hash ^= ((hash << 5) + ch + (hash >> 2));
+    }
+    return  (hash & 0x7FFFFFFF);
+  }
+  function password()
+  {
+    var sword;
+    var logTimes = 0;
+  while(sword!="1713842097" && logTimes!=3) //1713842097 is the hash code of the password, 3 is the number of attempts
+    {
+      sword=prompt("Please input the password");
+      if (sword==null)
+      {location.href='about:blank';}
+      sword=getHashCode(sword);
+      console.log("input password hash: " + sword);
+      if (sword!="1713842097")
+      {alert("Password wrong");}
+      logTimes++;
+      console.log("Try times: " + logTimes);
+    }
+    if (logTimes>=3)
+    {alert("Attempted many times, locked");location.href='about:blank';}
+    else{alert("Logged in");document.title = 'My page';}
+  }
+  password();
+  </script>
 </body>
 </html>
